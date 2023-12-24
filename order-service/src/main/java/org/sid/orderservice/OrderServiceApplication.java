@@ -1,5 +1,7 @@
 package org.sid.orderservice;
 
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.sid.orderservice.entities.Order;
 import org.sid.orderservice.entities.ProductItem;
 import org.sid.orderservice.enums.OrderStatus;
@@ -13,6 +15,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 
 import java.util.Collection;
